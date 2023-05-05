@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .bg{
+            background-image: linear-gradient(aqua,orange);
+            height: 100vh;
+            display: flex;
+           
+            
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            background-color: blue;
+            height: 500px;
+            width: 350px;
+            border-radius: 20px;
+            text-align: center;
+            /* position: relative; */
+            /* margin-left: 450px; */
+            /* top: 20%; */
+            /* padding-top: 10px; */
+
+        }
+        .btn{
+            padding: 15px;
+            margin: 3px;
+            background-color: rgb(155, 95, 211);
+            color: white;
+            height: 75px;
+            width: 70px;
+            border-radius: 18px;
+            font-size: 25;
+        }
+    
+        .main::placeholder{
+            color: white;
+        }
+        /* .main::-webkit-outer-spin-button,
+.main::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  
+} */
+.main{
+    outline: none;
+}
+        /* input{
+            -webkit-appearance: none;
+            appearance: none;
+            -moz-appearance: none;
+        } */
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <form action="" id="main">
+            <input class="main" type="text"  style="background-color: blue; color: white; padding: 15px; margin: 10px; width: 300px; 
+            font-size: 30px;" 
+            name="cal" placeholder="0">
+            <br>
+            <input class ="btn"  type="button" value="C" name="none" onclick="main.cal.value = ''">
+            <input  class ="btn" type="button" value="<" name="plus" onclick="cal.value = cal.value.toString().slice(0,-1)">
+            <input class ="btn"  type="button" value="%" name="per" onclick="main.cal.value += '%'">
+            <input  class ="btn" type="button" value="/" name="slash" onclick="main.cal.value += '/'">
+            <br>
+            <input class ="btn"  type="button" value="7" name="seven" onclick="main.cal.value += '7'">
+            <input  class ="btn" type="button" value="8" name="eight" onclick="main.cal.value += '8'">
+            <input  class ="btn" type="button" value="9" name="nine" onclick="main.cal.value += '9'">
+            <input  class ="btn" type="button" value="X" name="mul" onclick="main.cal.value += '*'">
+            <br>
+            <input class ="btn"  type="button" value="4" name="four" onclick="main.cal.value += '4'">
+            <input class ="btn"  type="button" value="5" name="fiv" onclick="main.cal.value += '5'">
+            <input  class ="btn" type="button" value="6" name="six" onclick="main.cal.value += '6'">
+            <input class ="btn" type="button" value="-" name="min" onclick="main.cal.value += '-'">
+            <br> 
+               <input  class ="btn" type="button" value="1" name="one" onclick="main.cal.value += '1'">
+               <input class ="btn"  type="button" value="2" name="tear" onclick="main.cal.value += '2'">
+               <input  class ="btn" type="button" value="3" name="thear" onclick="main.cal.value += '3'">
+               <input  class ="btn" type="button" value="+" name="plusr" onclick="main.cal.value += '+'">
+               <br>
+               <input class ="btn"  type="button" value="0" name="zero" onclick="main.cal.value += '0'">
+               <input  class ="btn" type="button" value="." name="dot" onclick="main.cal.value += '.'">
+               <input  class ="btn" type="button" style="background-color: orange; 
+               width: 150;" value="=" name="eq" onclick="main.cal.value = eval(main.cal.value)">
+
+ 
+
+        </form>
+    </div>
+    
+</body>
+</html>
